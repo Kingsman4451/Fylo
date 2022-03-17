@@ -1,0 +1,36 @@
+/* HERO */
+.hero {
+  background-color: $dark-bg;
+  padding-top: 25px;
+}
+
+.hero__inner {
+  text-align: center;
+  @include flex(center, space-between);
+  flex-direction: column;
+}
+
+.hero__content{
+  @include flex(center, space-between);
+  flex-direction: column;
+  max-width: 734px;
+}
+
+.hero__heading{
+  font-family: $font-family-raleway;
+  font-size: $font-size-big;
+  line-height: 60px;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.hero__text {
+  max-width: 589px;
+  font-size: $font-size-medium;
+  color: #ffffff;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 32px;
+}
