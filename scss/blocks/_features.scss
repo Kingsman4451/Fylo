@@ -1,9 +1,12 @@
 /* TEAM */
 .features {
-  @include flex(center,center);
   margin-top: 158px;
 }
 
+.features__inner {
+  @include flex(center,center);
+  flex-direction: column;
+}
 .features__list {
   max-width: 880px;
   @include list-no-style;
@@ -60,7 +63,7 @@
   }
 }
 
-.features__heading {
+.features__item-heading {
   font-size: $font-size-medium;
   line-height: 24px;
   color: #ffffff;
@@ -68,8 +71,55 @@
   margin-bottom: 9px;
 }
 
-.features__text {
+.features__item-text {
   font-size: $font-size-min;
   color: #ffffff;
   line-height: 21px;
+}
+
+.features__bottom{
+  @include flex(center, space-between);
+  margin-top: 136px;
+}
+
+.features__content {
+  max-width: 563px;
+}
+
+.features__heading{
+  max-width: 490px;
+  font-family: $font-family-raleway;
+  font-size: $font-size-big;
+  line-height: 50px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.features__text{
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+
+.features__link{
+  @include flex(center, flex-start);
+  max-width: 172px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #62E0D9;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #62E0D9;
+  margin-top: 24px;
+  &::after{
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url("../../img/arrow.png");
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    content: "";
+  }
 }
