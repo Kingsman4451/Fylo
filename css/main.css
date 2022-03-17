@@ -516,6 +516,10 @@ body {
 
 /* TEAM */
 .features {
+  margin-top: 158px;
+}
+
+.features__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +529,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 158px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .features__list {
@@ -596,7 +603,7 @@ body {
   content: "";
 }
 
-.features__heading {
+.features__item-heading {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
@@ -604,8 +611,72 @@ body {
   margin-bottom: 9px;
 }
 
-.features__text {
+.features__item-text {
   font-size: 14px;
   color: #ffffff;
   line-height: 21px;
+}
+
+.features__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 136px;
+}
+
+.features__content {
+  max-width: 563px;
+}
+
+.features__heading {
+  max-width: 490px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.features__text {
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+
+.features__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 172px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #62E0D9;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #62E0D9;
+  margin-top: 24px;
+}
+
+.features__link::after {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../../img/arrow.png");
+  background-repeat: no-repeat;
+  margin-left: 6px;
+  content: "";
 }
