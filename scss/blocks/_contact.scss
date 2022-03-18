@@ -33,3 +33,49 @@
   margin: 0;
   margin-bottom: 38px;
 }
+
+
+
+
+
+@include breakpoint-down(930px) {
+  .contact__inner{
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+
+@include breakpoint-down(768px) {
+  .contact__heading {
+    font-size: 28px;
+    line-height: 48px;
+  }
+}
+
+
+@include breakpoint-down(525px) {
+  .contact__inner{
+    padding: 42px 40px;
+  }
+  .contact__heading {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@include breakpoint-down(425px) {
+  .contact__inner{
+    padding: 40px 28px;
+  }
+  .contact__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@include breakpoint-down(425px) {
+  .contact__inner {
+    top: 155px;
+  }
+}

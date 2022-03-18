@@ -62,3 +62,30 @@
     content: "";
   }
 }
+
+
+
+@include breakpoint-down(1150px) {
+  .address {
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  .address__about {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+
+@include breakpoint-down(950px) {
+  .address {
+    max-width: 350px;
+  }
+}
+
+@include breakpoint-down(768px) {
+  .address {
+    margin-bottom: 80px;
+  }
+}

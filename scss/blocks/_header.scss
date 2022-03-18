@@ -2,7 +2,30 @@
 .header{
   background-color: $dark-bg;
   padding: 50px 0;
+  border-bottom: 1px solid $dark-bg;
 }
 .header__inner{
   @include flex(center, space-between)
+}
+
+
+
+
+
+@include breakpoint-down(525px) {
+  .header{
+    padding: 40px 0;
+  }
+}
+
+@include breakpoint-down(425px) {
+  .header{
+    padding: 30px 0;
+  }
+}
+
+@include breakpoint-down(375px) {
+  .header{
+    padding: 20px 0;
+  }
 }

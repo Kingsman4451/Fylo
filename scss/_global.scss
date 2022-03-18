@@ -5,3 +5,28 @@
   background-size: contain;
   background-color: $dark-bg;
 }
+
+
+@include breakpoint-down(768px) {
+  .main-bg {
+    background-position: center calc(0% + 450px);
+  }
+}
+
+@include breakpoint-down(525px) {
+  .main-bg {
+    background-position: center calc(0% + 320px);
+  }
+}
+
+@include breakpoint-down(425px) {
+  .main-bg {
+    background-position: center calc(0% + 250px);
+  }
+}
+
+@include breakpoint-down(375px) {
+  .main-bg {
+    background-position: center calc(0% + 230px);
+  }
+}

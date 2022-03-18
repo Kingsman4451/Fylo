@@ -16,3 +16,11 @@
     border: 2px solid #34A0CD;
   }
 }
+
+
+@include breakpoint-down(375px) {
+  .button {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
