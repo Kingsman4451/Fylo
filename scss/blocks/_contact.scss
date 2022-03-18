@@ -5,6 +5,8 @@
 }
 
 .contact__inner{
+  position: relative;
+  top: 110px;
   max-width: 863px;
   @include flex(center, center);
   flex-direction: column;
