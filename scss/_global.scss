@@ -1,3 +1,7 @@
 .main-bg{
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 300px) calc(0% + 670px);
+  background-size: contain;
   background-color: $dark-bg;
 }
