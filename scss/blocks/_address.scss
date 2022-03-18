@@ -1,0 +1,64 @@
+.address {
+  @include flex(flex-start, space-between);
+  font-style: normal;
+}
+
+.address__text {
+  position: relative;
+  max-width: 389px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  &::before {
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: 5px;
+    width: 20px;
+    height: 24px;
+    background-image: url("../../img/place.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.address__about {
+  margin-left: 127px;
+}
+
+.address__tel {
+  position: relative;
+  font-size: $font-size-min;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 19px;
+  &::before {
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    width: 25px;
+    height: 24px;
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.address__email {
+  position: relative;
+  font-size: $font-size-min;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+  &::before {
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    width: 25px;
+    height: 24px;
+    background-image: url("../../img/mail.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
