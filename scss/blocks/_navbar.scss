@@ -9,5 +9,19 @@
 .navbar__link{
   text-decoration: none;
   color: #ffffff;
-  
+  padding: 10px 0;
+  &::after{
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    content: "";
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 0.3s ease;
+  }
+  &:hover::after{
+    width: 100%;
+  }
 }
