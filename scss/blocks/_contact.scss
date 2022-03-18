@@ -1,0 +1,33 @@
+/* CONTACT */
+.contact {
+  @include flex(center, center);
+  background-color: #181F2B;
+}
+
+.contact__inner{
+  max-width: 863px;
+  @include flex(center, center);
+  flex-direction: column;
+  padding: 42px 77px;
+  background-color: $dark-bg;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+  border-radius: 9px;
+}
+
+.contact__heading {
+  font-family: $font-family-raleway;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.contact__text {
+  font-size: $font-size-min;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 38px;
+}
