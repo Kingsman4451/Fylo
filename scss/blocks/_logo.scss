@@ -2,12 +2,18 @@
   display: inline-block;
 }
 .logo__img{
+  fill: #63E1D9;
   display: block;
   width: 176px;
   height: 52px;
 }
 
-
+.logo__path {
+  transition: fill 0.3s ease;
+}
+.logo:hover .logo__path {
+  fill:#63E1D9;
+}
 
 @include breakpoint-down(768px) {
   .logo__img {
